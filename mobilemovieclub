@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>welcome to mobile movie club</h1>
+
+
+<p><break>
+to access site please send 0.0011 ETH to:  0x6D8FaaEa6Bbb91A1Ef37c74e21bE859E4ACc1244 
+then send email to <a href="mailto:mobilemovieclub@gmail.com?Subject=please%20send%20mobile%20movie%20club%20link" target="_top">mobilemovieclub@gmail.com</a>
+
+ with ETH confirmation image to receive passcode to enter protected area</break></p>
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "mobilemovieclub420") {
+alert('copy this link for image download then print out to scan with universal QR reader for access to selected films https://drive.google.com/file/d/1bCMSxVW0a6Zg6VtFrN7ypymj3qDxUzMk/view?usp=sharing');
+window.open('protectpage.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+
+</html>
